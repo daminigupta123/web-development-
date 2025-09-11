@@ -24,3 +24,18 @@ form.addEventListener("submit",(e)=>{
     // console.log(form[4].value);
     // console.log(form[5].value);
 })
+let form2=document.querySelector('#form2')
+form2.addEventListener("submit",(e)=>{
+    e.preventDefault();
+    let savedata=localStorage.getItem("formdata");
+    let dataobj=JSON.parse(savedata)
+    let loginobj={
+        email:form2[0].value,
+        pass:form2[1].value,
+    }
+})
+if(dataobj.email==loginobj.email && dataobj.password==loginobj.pass){
+    prompt("Login Successfull")
+}else{
+prompt("errorrr")
+}
