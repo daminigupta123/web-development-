@@ -93,7 +93,6 @@ let canvas = document.querySelector("canvas");
       ctx.font = "20px sans-serif";
       ctx.fillText(Score: ${score}, 50, 50);
     }
-
     function generateRandomCell() {
       let x = Math.round((Math.random() * (canvas.width - cell)) / cell) * cell;
       let y = Math.round((Math.random() * (canvas.height - cell)) / cell) * cell;
