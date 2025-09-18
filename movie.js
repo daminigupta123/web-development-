@@ -2,16 +2,19 @@ let btn=document.querySelector("#searchBtn");
 let input=document.querySelector("input");
 btn.addEventListener("click",()=>{
     let movieName=input.value;
-    let url=`http://www.omdbapi.com/?t=${movieName}&apikey=thewdb`;
-    fetch(url).then((data)=>{
-        return data.json();
-        }
-    ).then((res)=>{
-        console.log(res);
-        SharedWorker(res)
-    })
+    
+fetch(`https://api.tvmaze.com/search/shows?q=${movieName}`)
+.then((data)=>{
+
+    return data.json();
+}).then((res)=>{
+
+console.log(res)
+show(res)
 })
-function Show(res){
+})
+function show(res){
     let img=document.querySelector("img");
-    img.src=res.Poster;
+    let link=res[0].show.image.medium
+    img.setAttribute("src",link);
 }
