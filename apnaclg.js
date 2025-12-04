@@ -58,20 +58,39 @@
 // console.log("the sum is "+sum);
 // 
 // 
-let num =prompt("enter a number ")
-if(num>=80 && num<=100){
-    console.log(num,"grade a")
-}
-else if(num>=60 && num<=79){
-    console.log(num,"grade b")
-}
-else if(num>=50 && num<=59)
+// let num =prompt("enter a number ")
+// if(num>=80 && num<=100){
+    // console.log(num,"grade a")
+// }
+// else if(num>=60 && num<=79){
+    // console.log(num,"grade b")
+// }
+// else if(num>=50 && num<=59)
+// {
+    // console.log(num,"grade c")
+// }
+// else{
+    // console.log("fail")
+// }
+// 
+// let sum=0;
+// for(let i=1;i<=10;i++)
+// {
+    // sum=sum+i;
+// }
+// console.log("the sum is "+sum);
+// for(let i=1;i<=5;i++)
+// 
+// {
+    // console.log("damini gupta",i);
+// }
+let str="damini gupta"
+let size =0;
+
+for(let i of str)
 {
-    console.log(num,"grade c")
+    console.log(i);
+    size++;
 }
-else{
-    console.log("fail")
-}
-
-
+console.log("the size of string is "+size);
 
