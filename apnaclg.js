@@ -52,7 +52,26 @@
 // }
 // let name=prompt("enter your name");
 // console.log("hello "+name);
-let num1=prompt("enter first number");
-let num2=prompt("emter your second number");
-let sum=num1+num2;
-console.log("the sum is "+sum);
+// let num1=prompt("enter first number");
+// let num2=prompt("emter your second number");
+// let sum=num1+num2;
+// console.log("the sum is "+sum);
+// 
+// 
+let num =prompt("enter a number ")
+if(num>=80 && num<=100){
+    console.log(num,"grade a")
+}
+else if(num>=60 && num<=79){
+    console.log(num,"grade b")
+}
+else if(num>=50 && num<=59)
+{
+    console.log(num,"grade c")
+}
+else{
+    console.log("fail")
+}
+
+
+
